@@ -76,7 +76,7 @@ function listingCard(listing) {
   const image = mediaImage(cover, listing.title || listing.type, "card-image", placeholder);
   if (image) visual.append(image);
   const hasPhotos = [...(listing.horizontalPhotos || []), ...(listing.verticalPhotos || []), ...(listing.squarePhotos || [])].length > 0;
-  const badge = make("span", "status-badge", hasPhotos ? "En preparación" : "Sin foto autorizada");
+  const badge = make("span", "status-badge", listing.cover?.includes("placeholders/") ? "Imagen referencial" : "Fotografías disponibles");
   visual.append(badge);
 
   const body = make("div", "card-body");
@@ -84,8 +84,8 @@ function listingCard(listing) {
   meta.append(make("span", "listing-code", listing.id), make("span", "listing-type", listing.type));
   if (listing.operation) meta.append(make("span", "listing-operation", listing.operation));
   body.append(meta);
-  body.append(make("h3", "card-title", listing.title || `${listing.type} en preparación`));
-  body.append(make("p", "card-description", listing.description || "Resumen pendiente de validar."));
+  body.append(make("h3", "card-title", listing.title || listing.type));
+  body.append(make("p", "card-description", listing.description || "Descripción no disponible."));
   body.append(make("p", "card-info", listing.zone || "Zona por confirmar"));
   const specs = [];
   if (typeof listing.area === "number") specs.push(`${listing.areaLabel || "Área"} ${formatArea(listing.area)} m²`);
@@ -219,28 +219,27 @@ function renderDetail(listings) {
   const intro = make("section", "detail-intro");
   const titleBlock = make("div", "detail-title-block");
   titleBlock.append(make("p", "eyebrow", `FICHA / ${listing.id}`));
-  titleBlock.append(make("h1", "", listing.title || `${listing.type} en preparación`));
+  titleBlock.append(make("h1", "", listing.title || listing.type));
   titleBlock.append(make("p", "detail-location", listing.zone || "Ubicación por confirmar"));
   intro.append(titleBlock);
-  const status = make("div", "detail-status");
-  status.append(make("span", "status-dot"), make("span", "", "En preparación"));
-  intro.append(status);
   root.append(intro);
 
   const cover = make("section", "detail-cover");
   const placeholder = PLACEHOLDER_BY_TYPE[listing.type] || PLACEHOLDER_BY_TYPE.Apartamento;
   const image = mediaImage(listing.cover || placeholder, listing.title || listing.type, "detail-cover-image", placeholder);
   if (image) cover.append(image);
-  cover.append(make("span", "cover-caption", `${listing.type} · ${listing.id}`));
+  cover.append(make("span", "cover-caption", listing.cover?.includes("placeholders/")
+    ? `${listing.type} · Imagen referencial`
+    : `${listing.type} · ${listing.id}`));
   root.append(cover);
 
   const summary = make("section", "detail-summary");
   const description = listing.description?.trim();
   const descriptionBlock = make("div", "description-block");
   descriptionBlock.append(make("p", "eyebrow", "DESCRIPCIÓN"));
-  descriptionBlock.append(make("h2", "", description || "Información en preparación"));
+  descriptionBlock.append(make("h2", "", description || "Descripción no disponible"));
   if (!description) {
-    descriptionBlock.append(make("p", "muted", "La descripción de este inmueble está pendiente de revisión y aprobación."));
+    descriptionBlock.append(make("p", "muted", "No hay una descripción disponible para esta ficha."));
   }
   summary.append(descriptionBlock);
 
@@ -321,7 +320,7 @@ function renderDetail(listings) {
 
   const notice = make("aside", "draft-notice");
   notice.append(make("span", "notice-icon", "i"));
-  notice.append(make("p", "", "Ficha en preparación. La información y los medios se mostrarán públicamente solo después de su validación y autorización."));
+  notice.append(make("p", "", "La disponibilidad, el precio y las condiciones del inmueble deben confirmarse antes de cualquier gestión."));
   root.append(notice);
 }
 

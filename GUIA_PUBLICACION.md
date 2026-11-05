@@ -15,4 +15,4 @@ Verifica que la carpeta `docs/` contenga únicamente contenido aprobado. No copi
 
 ## Prueba local
 
-Puedes abrir `docs/index.html` directamente para revisar el catálogo sin publicar. Si usas un servidor HTTP local, la página también debe cargar desde la dirección que ese servidor indique. Después de cada actualización del inventario, regenera los dos archivos de datos con el script de preparación antes de copiar o desplegar el sitio.
+Puedes abrir `docs/index.html` directamente para revisar el catálogo sin publicar. Si usas un servidor HTTP local, la página también debe cargar desde la dirección que ese servidor indique. Después de cada actualización del inventario, regenera los dos archivos de datos con el generador del catálogo antes de copiar o desplegar el sitio.

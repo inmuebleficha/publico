@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
-  <title id="title">Imagen arquitectónica pendiente de validación</title>
+  <title id="title">Imagen arquitectónica referencial, no corresponde al inmueble</title>
   <rect width="1200" height="800" fill="#e9e9e3"/>
   <path d="M0 460q160-120 330 0t330 0 330 0 210 0v340H0Z" fill="#d8ddd7"/>
   <path d="M0 545q165-85 330 0t330 0 330 0 210 0" fill="none" stroke="#9ba49e" stroke-width="4"/>
@@ -8,5 +8,5 @@
   <circle cx="170" cy="260" r="44" fill="#d0d6ce"/>
   <path d="M170 300v190m-65-110h130m-130 110 65-80 65 80" fill="none" stroke="#718078" stroke-width="8" stroke-linecap="round"/>
   <path d="M0 685h1200" stroke="#9ba49e" stroke-width="3"/>
-  <text x="600" y="755" text-anchor="middle" fill="#45524b" font-family="Arial,sans-serif" font-size="24" letter-spacing="3">IMAGEN PENDIENTE DE VALIDACIÓN</text>
+  <text x="600" y="755" text-anchor="middle" fill="#45524b" font-family="Arial,sans-serif" font-size="24" letter-spacing="3">IMAGEN REFERENCIAL</text>
 </svg>
