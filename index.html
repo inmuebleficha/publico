@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo preliminar de inmuebles organizado por fichas, fotografías y características verificadas.">
+  <meta name="theme-color" content="#f4f3ee">
+  <title>Inmuebles | Catálogo</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data/listings.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="catalog">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="wordmark" href="./" aria-label="Catálogo inmobiliario, inicio">
+      <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>INMUEBLES</strong><small>CATÁLOGO DE PROPIEDADES</small></span>
+    </a>
+    <nav class="header-nav" aria-label="Navegación principal">
+      <a href="#catalogo">Catálogo</a>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> CIUDAD / ESPACIO / ARQUITECTURA</p>
+        <h1>La ciudad se<br><em>habita por dentro.</em></h1>
+        <p class="hero-description">Explora inmuebles y sus características en un catálogo organizado. Cada descripción se presenta sin datos personales ni información de contacto.</p>
+        <a class="button button-dark" href="#catalogo">Explorar inmuebles <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-graphic" aria-hidden="true">
+        <img src="assets/urban-city.svg" alt="" class="hero-city-image">
+        <div class="graphic-label">TRAZAS URBANAS <span>—</span> 01 / 15</div>
+      </div>
+      <div class="hero-rule"><span>SELECCIÓN DE INMUEBLES</span><span>ARQUITECTURA PARA VIVIR</span></div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / INVENTARIO</p>
+          <h2>Encuentra un espacio</h2>
+        </div>
+        <p class="section-note">La información comercial aparece cuando ha sido verificada.</p>
+      </div>
+
+      <form class="filter-panel" id="filters">
+        <label class="filter-field search-field">
+          <span>Buscar</span>
+          <input type="search" name="query" id="query" placeholder="Código o tipo de inmueble" autocomplete="off">
+        </label>
+        <label class="filter-field">
+          <span>Tipo</span>
+          <select name="type" id="type-filter">
+            <option value="">Todos los tipos</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span>Zona</span>
+          <select name="zone" id="zone-filter">
+            <option value="">Todas las zonas</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span>Operación</span>
+          <select name="operation" id="operation-filter">
+            <option value="">Venta o arriendo</option>
+          </select>
+        </label>
+        <button class="filter-submit" type="submit" aria-label="Aplicar filtros">⌕</button>
+        <details class="advanced-filters">
+          <summary>Filtros avanzados <span aria-hidden="true">＋</span></summary>
+          <div class="advanced-grid">
+            <label class="filter-field">
+              <span>Precio desde</span>
+              <input type="number" id="price-min" min="0" inputmode="numeric" placeholder="Sin dato verificado">
+            </label>
+            <label class="filter-field">
+              <span>Precio hasta</span>
+              <input type="number" id="price-max" min="0" inputmode="numeric" placeholder="Sin dato verificado">
+            </label>
+            <label class="filter-field">
+              <span>Área mínima (m²)</span>
+              <input type="number" id="area-min" min="0" inputmode="numeric" placeholder="Sin dato verificado">
+            </label>
+            <label class="filter-field">
+              <span>Habitaciones mínimas</span>
+              <select id="bedrooms-min">
+                <option value="">Cualquiera</option>
+                <option value="1">1 o más</option>
+                <option value="2">2 o más</option>
+                <option value="3">3 o más</option>
+                <option value="4">4 o más</option>
+              </select>
+            </label>
+            <label class="filter-field">
+              <span>Baños mínimos</span>
+              <select id="bathrooms-min">
+                <option value="">Cualquiera</option>
+                <option value="1">1 o más</option>
+                <option value="2">2 o más</option>
+                <option value="3">3 o más</option>
+              </select>
+            </label>
+            <fieldset class="feature-filter">
+              <legend>Características</legend>
+              <label><input type="checkbox" value="balcony"> Balcón / terraza</label>
+              <label><input type="checkbox" value="parking"> Parqueadero</label>
+              <label><input type="checkbox" value="elevator"> Ascensor</label>
+              <label><input type="checkbox" value="security"> Vigilancia</label>
+              <small>Se activan al completar y verificar los datos de las fichas.</small>
+            </fieldset>
+          </div>
+        </details>
+        <div class="filter-actions">
+          <p id="filter-status" aria-live="polite">Cargando inventario…</p>
+          <button type="reset" class="text-button" id="clear-filters">Limpiar filtros</button>
+        </div>
+      </form>
+
+      <div class="catalog-toolbar">
+        <p><span class="toolbar-dot"></span> Vista de catálogo <span class="muted">/ fichas en preparación</span></p>
+        <label class="sort-control">Ordenar
+          <select id="sort-order" aria-label="Ordenar inmuebles">
+            <option value="code">Código</option>
+            <option value="type">Tipo de inmueble</option>
+            <option value="price-low">Precio: menor a mayor</option>
+            <option value="area-high">Área: mayor a menor</option>
+          </select>
+        </label>
+      </div>
+      <div class="listing-grid" id="listing-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <p class="eyebrow">SIN COINCIDENCIAS</p>
+        <h3>No encontramos inmuebles con esos filtros.</h3>
+        <p>Algunos criterios aún no tienen datos comerciales verificados.</p>
+        <button class="button button-outline" id="empty-clear" type="button">Ver todo el inventario</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark wordmark-footer" href="./">
+      <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span><strong>INMUEBLES</strong><small>CATÁLOGO DE PROPIEDADES</small></span>
+    </a>
+    <p>Catálogo en preparación. Las fichas y medios se publican solo después de revisión y autorización.</p>
+    <a href="#contenido" class="back-top">Volver arriba ↑</a>
+  </footer>
+</body>
+</html>
