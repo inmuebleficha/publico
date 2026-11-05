@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title">
+  <title id="title">Imagen arquitectónica pendiente de validación</title>
+  <rect width="1200" height="800" fill="#e9e9e3"/>
+  <path d="M0 620 280 500l210 82 250-180 460 180v218H0Z" fill="#d8ddd7"/>
+  <path d="M293 573V222l284-118 285 118v351" fill="#f7f5ef" stroke="#718078" stroke-width="5"/>
+  <path d="M345 278h150v131H345zm218 0h150v131H563zM345 452h150v121H345zm218 0h150v121H563z" fill="#d5e0dc" stroke="#718078" stroke-width="5"/>
+  <path d="M493 104 577 62l84 42" fill="none" stroke="#718078" stroke-width="6"/>
+  <path d="M0 685h1200" stroke="#9ba49e" stroke-width="3"/>
+  <text x="600" y="742" text-anchor="middle" fill="#45524b" font-family="Arial,sans-serif" font-size="24" letter-spacing="3">IMAGEN PENDIENTE DE VALIDACIÓN</text>
+</svg>

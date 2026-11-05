@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+  <title id="title">Ilustración arquitectónica urbana</title>
+  <desc id="description">Composición urbana de edificios residenciales contemporáneos, fachadas y espacio público.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#455a50"/>
+      <stop offset="1" stop-color="#263832"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#d9d4c7"/>
+      <stop offset="1" stop-color="#b9c1b4"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" x2="1">
+      <stop offset="0" stop-color="#9ca99d"/>
+      <stop offset="1" stop-color="#7e8d82"/>
+    </linearGradient>
+    <pattern id="windowGrid" width="72" height="82" patternUnits="userSpaceOnUse">
+      <rect x="12" y="12" width="38" height="48" fill="#62766b"/>
+      <path d="M31 12v48M12 38h38" stroke="#b9c1b4" stroke-width="2" opacity=".58"/>
+    </pattern>
+    <pattern id="windowGridLight" width="58" height="64" patternUnits="userSpaceOnUse">
+      <rect x="9" y="9" width="31" height="38" fill="#d7ddcf"/>
+      <path d="M24.5 9v38M9 28h31" stroke="#718278" stroke-width="1.5" opacity=".62"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <path d="M0 235h1200M0 310h1200M0 385h1200M0 460h1200" stroke="#d8dfd3" stroke-width="1" opacity=".09"/>
+  <path d="M120 0v620M240 0v620M360 0v620M480 0v620M600 0v620M720 0v620M840 0v620M960 0v620M1080 0v620" stroke="#d8dfd3" stroke-width="1" opacity=".07"/>
+  <circle cx="920" cy="155" r="95" fill="#c47b59" opacity=".9"/>
+  <path d="M0 520 156 435v-185l146-86 146 84v42l150-85 136 78v-76l181-106 185 107v380l-600 161H0z" fill="#455a50" opacity=".9"/>
+  <path d="m81 505 0-168 112-66 111 64v208z" fill="#aeb8aa"/>
+  <path d="m81 337 112-66 111 64-111 67z" fill="#d1d0c4"/>
+  <path d="m193 402 111-67v207l-111 31z" fill="#859589"/>
+  <path d="M98 356v133m38-155v143m38-164v152m38-131v132m38-150v140" stroke="#60736a" stroke-width="12" opacity=".76"/>
+  <path d="m291 300 160-94 160 91v292l-320 82z" fill="#c8cabe"/>
+  <path d="m291 300 160-94 160 91-160 99z" fill="#e1ddcf"/>
+  <path d="m451 396 160-99v292l-160 82z" fill="url(#side)"/>
+  <path d="M318 318v321m43-346v355m43-380v368m43-342v332m43-358v337m43-311v289" stroke="#5d7167" stroke-width="18" opacity=".88"/>
+  <path d="M324 302 451 227l127 72" fill="none" stroke="#f0eadc" stroke-width="8" opacity=".84"/>
+  <path d="M623 340 805 233l182 105v317L623 735z" fill="url(#front)"/>
+  <path d="m805 233 182 105-181 107-183-105z" fill="#ede7d8"/>
+  <path d="m806 445 181-107v317L806 763z" fill="#89988c"/>
+  <path d="M648 363v355m49-384v367m49-396v372m49-344v358m49-386v357" stroke="#53685e" stroke-width="23" opacity=".92"/>
+  <path d="M833 255v153m44-128v153m44-127v153m44-127v154" stroke="#708277" stroke-width="13" opacity=".72"/>
+  <path d="M0 659 622 502l578 190v208H0z" fill="#d0ccbd"/>
+  <path d="m0 720 617-153 583 184" fill="none" stroke="#f4eee0" stroke-width="8" opacity=".66"/>
+  <path d="m0 807 603-151 597 188M140 900l512-186m139 186 200-164" fill="none" stroke="#8c9a8d" stroke-width="3" opacity=".8"/>
+  <path d="M0 660h1200" stroke="#c47b59" stroke-width="5"/>
+  <g fill="#283a33">
+    <path d="M55 643v-99l10-25 10 25v99zm-6-88h32m-31 16h31m-30 16h29"/>
+    <path d="M1035 666v-112l12-30 12 30v112zm-8-101h40m-38 19h36m-34 19h32"/>
+    <path d="M1110 690v-82l9-22 9 22v82zm-6-67h30m-29 15h28m-27 15h26"/>
+  </g>
+  <g fill="#c47b59">
+    <circle cx="65" cy="527" r="27"/>
+    <circle cx="1047" cy="535" r="32"/>
+    <circle cx="1119" cy="585" r="24"/>
+  </g>
+  <g fill="url(#windowGrid)" opacity=".72">
+    <path d="M81 337 193 271l111 64v207l-111 31-112-68z"/>
+  </g>
+  <g fill="url(#windowGridLight)" opacity=".85">
+    <path d="M623 340 805 233l182 105v317L623 735z"/>
+  </g>
+  <path d="M0 888h1200" stroke="#f2ede1" stroke-width="2" opacity=".45"/>
+</svg>
