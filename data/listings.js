@@ -304,16 +304,16 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-007",
     "type": "Apartamento",
-    "title": "Apartamento · 119 m²",
+    "title": "Apartamento en venta · 120 m²",
     "zone": "Cedritos, Usaquén, Bogotá",
     "operation": "Venta",
-    "price": null,
+    "price": 589000000,
     "rentPrice": null,
     "priceIncludesAdmin": false,
-    "administration": null,
-    "area": 119,
-    "areaLabel": null,
-    "privateArea": null,
+    "administration": 213000,
+    "area": 120,
+    "areaLabel": "Construidos",
+    "privateArea": 120,
     "lotArea": null,
     "floor": null,
     "bedrooms": 4,
@@ -322,12 +322,13 @@ window.PROPERTY_LISTINGS = [
     "features": [
       "parking"
     ],
-    "description": "Apartamento de 119 m² con cuatro habitaciones, dos baños y dos parqueaderos. Precio y administración pendientes de confirmar.",
+    "description": "Apartamento de 120 m² construidos y privados en Cedritos, Usaquén. Tiene cuatro habitaciones, dos baños y dos parqueaderos. La descripción fuente indica que la construcción tiene menos de 20 años y destaca la distribución funcional y la iluminación.",
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-007/photo-03.jpg",
+    "cover": "assets/listings/INM-007/cover.jpg",
     "horizontalPhotos": [
+      "assets/listings/INM-007/cover.jpg",
       "assets/listings/INM-007/photo-03.jpg",
       "assets/listings/INM-007/photo-05.jpg"
     ],
