@@ -68,7 +68,7 @@ function mediaImage(path, alt, className = "", fallbackPath = null) {
 
 function listingCard(listing) {
   const link = make("a", "listing-card");
-  link.href = `ficha.html?id=${encodeURIComponent(listing.id)}`;
+  link.href = `ficha-${listing.id}.html`;
   link.setAttribute("aria-label", `${listing.type}, código ${listing.id}. Abrir ficha.`);
   const visual = make("div", `card-visual${listing.cover?.includes("placeholders/") ? " is-placeholder" : ""}`);
   const placeholder = PLACEHOLDER_BY_TYPE[listing.type] || PLACEHOLDER_BY_TYPE.Apartamento;
@@ -191,23 +191,58 @@ function mediaSection(title, paths, orientation) {
   if (!Array.isArray(paths) || paths.length === 0) return null;
   const section = make("section", `media-section media-${orientation}`);
   section.append(make("div", "media-heading", title));
-  const grid = make("div", "media-grid");
+
+  const carousel = make("div", "carousel");
+  carousel.setAttribute("role", "group");
+  carousel.setAttribute("aria-label", `${title} (carrusel)`);
+  const viewport = make("div", "carousel-viewport");
+  const track = make("div", "carousel-track");
   paths.forEach((path, index) => {
-    const figure = make("figure", "media-figure");
+    const figure = make("figure", "media-figure carousel-slide");
     const image = mediaImage(path, `${title}, imagen ${index + 1}`, "gallery-image");
     if (!image) return;
     figure.append(image);
-    grid.append(figure);
+    track.append(figure);
   });
-  if (!grid.childElementCount) return null;
-  section.append(grid);
+  if (!track.childElementCount) return null;
+  viewport.append(track);
+  carousel.append(viewport);
+
+  const total = track.childElementCount;
+  if (total > 1) {
+    const prev = make("button", "carousel-button carousel-prev", "‹");
+    prev.type = "button";
+    prev.setAttribute("aria-label", `Imagen anterior de ${title}`);
+    const next = make("button", "carousel-button carousel-next", "›");
+    next.type = "button";
+    next.setAttribute("aria-label", `Imagen siguiente de ${title}`);
+    const counter = make("p", "carousel-counter", `1 / ${total}`);
+    counter.setAttribute("aria-live", "polite");
+
+    const update = () => {
+      const step = viewport.clientWidth || 1;
+      const index = Math.min(total - 1, Math.max(0, Math.round(viewport.scrollLeft / step)));
+      counter.textContent = `${index + 1} / ${total}`;
+      prev.disabled = index <= 0;
+      next.disabled = index >= total - 1;
+    };
+    prev.addEventListener("click", () => viewport.scrollBy({ left: -viewport.clientWidth, behavior: "smooth" }));
+    next.addEventListener("click", () => viewport.scrollBy({ left: viewport.clientWidth, behavior: "smooth" }));
+    viewport.addEventListener("scroll", () => window.requestAnimationFrame(update), { passive: true });
+    window.addEventListener("resize", update);
+    update();
+
+    carousel.append(prev, next, counter);
+  }
+
+  section.append(carousel);
   return section;
 }
 
 function renderDetail(listings) {
   const root = byId("detail-content");
   if (!root) return;
-  const id = new URLSearchParams(window.location.search).get("id");
+  const id = document.body.dataset.listingId || new URLSearchParams(window.location.search).get("id");
   const listing = listings.find((item) => item.id === id);
   if (!listing) {
     root.append(make("section", "not-found", "No encontramos esta ficha. Revisa el código o vuelve al catálogo."));

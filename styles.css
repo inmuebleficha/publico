@@ -299,6 +299,24 @@ h1, h2, h3, p { margin-top: 0; }
 .media-vertical .media-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .media-square .media-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .media-square .gallery-image { aspect-ratio: 1; object-fit: cover; }
+
+/* Carrusel de fotografías (un carrusel por orientación) */
+.carousel { position: relative; }
+.carousel-viewport { overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; }
+.carousel-viewport::-webkit-scrollbar { display: none; }
+.carousel-track { display: flex; gap: 18px; }
+.carousel-slide { flex: 0 0 100%; scroll-snap-align: start; margin: 0; background: var(--paper-deep); }
+.carousel-slide .gallery-image { width: 100%; max-height: min(68vh, 680px); object-fit: contain; }
+.media-vertical .carousel-slide { flex-basis: min(46%, 420px); }
+.media-vertical .carousel-slide .gallery-image { max-height: min(74vh, 720px); object-fit: contain; }
+.media-square .carousel-slide { flex-basis: min(46%, 420px); }
+.media-square .carousel-slide .gallery-image { aspect-ratio: 1; object-fit: cover; }
+.carousel-button { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 42px; height: 42px; display: grid; place-items: center; border: 1px solid var(--line); background: #f4f3eee6; color: var(--ink); font-size: 22px; line-height: 1; cursor: pointer; transition: background .2s, color .2s; }
+.carousel-button:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); color: #fff; }
+.carousel-button:disabled { opacity: .3; cursor: default; }
+.carousel-prev { left: 12px; }
+.carousel-next { right: 12px; }
+.carousel-counter { position: absolute; right: 12px; bottom: 12px; z-index: 2; margin: 0; padding: 6px 10px; background: #f4f3eee6; color: var(--ink); font-size: 10px; letter-spacing: .1em; }
 .video-section { margin-top: 56px; padding: 40px; background: var(--paper-deep); }
 .video-section .eyebrow { margin-bottom: 10px; }
 .video-section h2 { margin: 0 0 12px; font-family: var(--serif); font-size: 32px; font-weight: 400; }
@@ -366,6 +384,13 @@ h1, h2, h3, p { margin-top: 0; }
   .description-block h2 { font-size: 31px; }
   .media-grid, .media-vertical .media-grid, .media-square .media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .media-heading { font-size: 22px; }
+  .carousel-track { gap: 10px; }
+  .media-vertical .carousel-slide, .media-square .carousel-slide { flex-basis: 100%; }
+  .carousel-slide .gallery-image, .media-vertical .carousel-slide .gallery-image { max-height: 62vh; }
+  .carousel-button { width: 36px; height: 36px; font-size: 19px; }
+  .carousel-prev { left: 6px; }
+  .carousel-next { right: 6px; }
+  .carousel-counter { right: 6px; bottom: 6px; font-size: 9px; padding: 5px 8px; }
   .video-section { margin-top: 30px; padding: 23px; }
   .video-section h2 { font-size: 27px; }
   .video-grid { grid-template-columns: 1fr; }
