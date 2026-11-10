@@ -16,3 +16,22 @@ Verifica que la carpeta `docs/` contenga únicamente contenido aprobado. No copi
 ## Prueba local
 
 Puedes abrir `docs/index.html` directamente para revisar el catálogo sin publicar. Si usas un servidor HTTP local, la página también debe cargar desde la dirección que ese servidor indique. Después de cada actualización del inventario, regenera los dos archivos de datos con el generador del catálogo antes de copiar o desplegar el sitio.
+
+## Caché: bumpea la versión al cambiar los datos
+
+Las páginas cargan el inventario con una etiqueta de versión: `data/listings.js?v=20261110-inm015`.
+Si cambias `data/listings.js` **y no cambias esa etiqueta**, los navegadores (y los rastreadores de
+WhatsApp o Facebook) siguen sirviendo la versión anterior del inventario desde su caché, aunque el
+archivo ya esté actualizado en el repositorio.
+
+Procedimiento obligatorio al modificar datos o fotos:
+
+1. Actualiza `data/listings.json` y `data/listings.js`.
+2. Cambia la etiqueta en `ficha.html` e `index.html` a una versión nueva, por ejemplo `?v=20261110-inm015`.
+3. Regenera las fichas estáticas con el generador (`gen_fichas.py`), que copian esa misma versión a cada `ficha-INM-XXX.html`.
+4. Sube `index.html`, `ficha.html`, las 15 fichas y los archivos de datos, y espera el despliegue.
+5. Verifica en producción que el contador de fotos y los precios coincidan con los datos nuevos.
+
+Las fotos nuevas deben publicarse en `assets/listings/INM-XXX/photo-NN.jpg` sin metadatos EXIF ni GPS,
+con el lado mayor a 1600 px. Las fichas estáticas también necesitan regenerarse cuando cambia la portada
+(`cover`), porque la vista previa de WhatsApp toma la imagen de `og:image`.
