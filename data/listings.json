@@ -546,8 +546,9 @@
     "descriptionStatus": "Actualizado desde descripcion.txt (Normandía, 11/11); validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-008/photo-06.jpg",
+    "cover": "assets/listings/INM-008/photo-43.jpg",
     "horizontalPhotos": [
+      "assets/listings/INM-008/photo-43.jpg",
       "assets/listings/INM-008/photo-01.jpg",
       "assets/listings/INM-008/photo-02.jpg",
       "assets/listings/INM-008/photo-03.jpg",
@@ -564,15 +565,15 @@
       "assets/listings/INM-008/photo-36.jpg",
       "assets/listings/INM-008/photo-39.jpg",
       "assets/listings/INM-008/photo-41.jpg",
-      "assets/listings/INM-008/photo-43.jpg",
       "assets/listings/INM-008/photo-44.jpg",
       "assets/listings/INM-008/photo-45.jpg",
       "assets/listings/INM-008/photo-46.jpg",
-      "assets/listings/INM-008/photo-47.jpg"
+      "assets/listings/INM-008/photo-47.jpg",
+      "assets/listings/INM-008/photo-48.jpg"
     ],
     "verticalPhotos": [
-      "assets/listings/INM-008/photo-06.jpg",
       "assets/listings/INM-008/photo-05.jpg",
+      "assets/listings/INM-008/photo-06.jpg",
       "assets/listings/INM-008/photo-07.jpg",
       "assets/listings/INM-008/photo-09.jpg",
       "assets/listings/INM-008/photo-11.jpg",
