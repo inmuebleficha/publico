@@ -27,7 +27,6 @@
       "assets/listings/INM-001/photo-11.jpg"
     ],
     "verticalPhotos": [
-      "assets/listings/INM-001/photo-12.jpg",
       "assets/listings/INM-001/photo-01.jpg",
       "assets/listings/INM-001/photo-02.jpg",
       "assets/listings/INM-001/photo-03.jpg",
@@ -37,7 +36,8 @@
       "assets/listings/INM-001/photo-07.jpg",
       "assets/listings/INM-001/photo-08.jpg",
       "assets/listings/INM-001/photo-09.jpg",
-      "assets/listings/INM-001/photo-10.jpg"
+      "assets/listings/INM-001/photo-10.jpg",
+      "assets/listings/INM-001/photo-12.jpg"
     ],
     "squarePhotos": [],
     "videos": [
@@ -396,9 +396,9 @@
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-006/photo-29.jpg",
+    "cover": "assets/listings/INM-006/photo-09.jpg",
     "horizontalPhotos": [
-      "assets/listings/INM-006/photo-29.jpg",
+      "assets/listings/INM-006/photo-09.jpg",
       "assets/listings/INM-006/photo-01.jpg",
       "assets/listings/INM-006/photo-02.jpg",
       "assets/listings/INM-006/photo-03.jpg",
@@ -407,7 +407,6 @@
       "assets/listings/INM-006/photo-06.jpg",
       "assets/listings/INM-006/photo-07.jpg",
       "assets/listings/INM-006/photo-08.jpg",
-      "assets/listings/INM-006/photo-09.jpg",
       "assets/listings/INM-006/photo-10.jpg",
       "assets/listings/INM-006/photo-11.jpg",
       "assets/listings/INM-006/photo-12.jpg",
@@ -466,9 +465,9 @@
     "published": false,
     "cover": "assets/listings/INM-007/photo-36.jpg",
     "horizontalPhotos": [
-      "assets/listings/INM-007/photo-36.jpg",
       "assets/listings/INM-007/photo-03.jpg",
-      "assets/listings/INM-007/photo-05.jpg"
+      "assets/listings/INM-007/photo-05.jpg",
+      "assets/listings/INM-007/photo-36.jpg"
     ],
     "verticalPhotos": [
       "assets/listings/INM-007/photo-01.jpg",
@@ -682,7 +681,6 @@
     "cover": "assets/listings/INM-010/photo-09.jpg",
     "horizontalPhotos": [],
     "verticalPhotos": [
-      "assets/listings/INM-010/photo-09.jpg",
       "assets/listings/INM-010/photo-01.jpg",
       "assets/listings/INM-010/photo-02.jpg",
       "assets/listings/INM-010/photo-03.jpg",
@@ -690,7 +688,8 @@
       "assets/listings/INM-010/photo-05.jpg",
       "assets/listings/INM-010/photo-06.jpg",
       "assets/listings/INM-010/photo-07.jpg",
-      "assets/listings/INM-010/photo-08.jpg"
+      "assets/listings/INM-010/photo-08.jpg",
+      "assets/listings/INM-010/photo-09.jpg"
     ],
     "squarePhotos": [],
     "videos": [],
@@ -790,13 +789,13 @@
     "published": false,
     "cover": "assets/listings/INM-012/photo-22.jpg",
     "horizontalPhotos": [
-      "assets/listings/INM-012/photo-22.jpg",
       "assets/listings/INM-012/photo-02.jpg",
       "assets/listings/INM-012/photo-09.jpg",
       "assets/listings/INM-012/photo-10.jpg",
       "assets/listings/INM-012/photo-11.jpg",
       "assets/listings/INM-012/photo-12.jpg",
       "assets/listings/INM-012/photo-19.jpg",
+      "assets/listings/INM-012/photo-22.jpg",
       "assets/listings/INM-012/photo-23.jpg",
       "assets/listings/INM-012/photo-28.jpg",
       "assets/listings/INM-012/photo-29.jpg",
@@ -858,10 +857,10 @@
     "published": false,
     "cover": "assets/listings/INM-013/photo-11.jpg",
     "horizontalPhotos": [
-      "assets/listings/INM-013/photo-11.jpg",
       "assets/listings/INM-013/photo-06.jpg",
       "assets/listings/INM-013/photo-07.jpg",
-      "assets/listings/INM-013/photo-08.jpg"
+      "assets/listings/INM-013/photo-08.jpg",
+      "assets/listings/INM-013/photo-11.jpg"
     ],
     "verticalPhotos": [
       "assets/listings/INM-013/photo-01.jpg",
