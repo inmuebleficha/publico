@@ -288,6 +288,13 @@ function renderDetail(listings) {
     : `${listing.type} · ${listing.id}`));
   root.append(cover);
 
+  if (listing.negocio && listing.negocio.aceptaCoBroker) {
+    const broker = make("section", "detail-broker");
+    broker.append(make("p", "eyebrow", "MODALIDAD DE VENTA"));
+    broker.append(make("p", "detail-broker-text", listing.negocio.texto || ""));
+    root.append(broker);
+  }
+
   const summary = make("section", "detail-summary");
   const description = listing.description?.trim();
   const descriptionBlock = make("div", "description-block");

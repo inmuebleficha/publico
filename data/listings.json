@@ -22,11 +22,12 @@
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-001/photo-11.jpg",
+    "cover": "assets/listings/INM-001/photo-12.jpg",
     "horizontalPhotos": [
       "assets/listings/INM-001/photo-11.jpg"
     ],
     "verticalPhotos": [
+      "assets/listings/INM-001/photo-12.jpg",
       "assets/listings/INM-001/photo-01.jpg",
       "assets/listings/INM-001/photo-02.jpg",
       "assets/listings/INM-001/photo-03.jpg",
@@ -36,8 +37,7 @@
       "assets/listings/INM-001/photo-07.jpg",
       "assets/listings/INM-001/photo-08.jpg",
       "assets/listings/INM-001/photo-09.jpg",
-      "assets/listings/INM-001/photo-10.jpg",
-      "assets/listings/INM-001/photo-12.jpg"
+      "assets/listings/INM-001/photo-10.jpg"
     ],
     "squarePhotos": [],
     "videos": [
@@ -88,7 +88,16 @@
     "videos": [],
     "videosPendingReview": false,
     "videosWithheldReason": null,
-    "plans": []
+    "plans": [],
+    "negocio": {
+      "modalidad": "co_broker",
+      "aceptaCoBroker": true,
+      "reparto": {
+        "agencia": 50,
+        "broker": 50
+      },
+      "texto": "Trabajo con co-broker: comisión dividida 50/50 con el bróker que derive la operación."
+    }
   },
   {
     "id": "INM-003",
@@ -157,7 +166,16 @@
     "videos": [],
     "videosPendingReview": false,
     "videosWithheldReason": null,
-    "plans": []
+    "plans": [],
+    "negocio": {
+      "modalidad": "co_broker",
+      "aceptaCoBroker": true,
+      "reparto": {
+        "agencia": 50,
+        "broker": 50
+      },
+      "texto": "Trabajo con co-broker: comisión dividida 50/50 con el bróker que derive la operación."
+    }
   },
   {
     "id": "INM-004",
@@ -211,7 +229,16 @@
     "videos": [],
     "videosPendingReview": false,
     "videosWithheldReason": null,
-    "plans": []
+    "plans": [],
+    "negocio": {
+      "modalidad": "co_broker",
+      "aceptaCoBroker": true,
+      "reparto": {
+        "agencia": 50,
+        "broker": 50
+      },
+      "texto": "Trabajo con co-broker: comisión dividida 50/50 con el bróker que derive la operación."
+    }
   },
   {
     "id": "INM-005",
@@ -433,8 +460,9 @@
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-007/photo-03.jpg",
+    "cover": "assets/listings/INM-007/photo-36.jpg",
     "horizontalPhotos": [
+      "assets/listings/INM-007/photo-36.jpg",
       "assets/listings/INM-007/photo-03.jpg",
       "assets/listings/INM-007/photo-05.jpg"
     ],
@@ -479,7 +507,16 @@
     ],
     "videosPendingReview": false,
     "videosWithheldReason": null,
-    "plans": []
+    "plans": [],
+    "negocio": {
+      "modalidad": "co_broker",
+      "aceptaCoBroker": true,
+      "reparto": {
+        "agencia": 50,
+        "broker": 50
+      },
+      "texto": "Trabajo con co-broker: comisión dividida 50/50 con el bróker que derive la operación."
+    }
   },
   {
     "id": "INM-008",
@@ -638,9 +675,10 @@
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-010/photo-01.jpg",
+    "cover": "assets/listings/INM-010/photo-09.jpg",
     "horizontalPhotos": [],
     "verticalPhotos": [
+      "assets/listings/INM-010/photo-09.jpg",
       "assets/listings/INM-010/photo-01.jpg",
       "assets/listings/INM-010/photo-02.jpg",
       "assets/listings/INM-010/photo-03.jpg",
@@ -654,7 +692,16 @@
     "videos": [],
     "videosPendingReview": false,
     "videosWithheldReason": null,
-    "plans": []
+    "plans": [],
+    "negocio": {
+      "modalidad": "co_broker",
+      "aceptaCoBroker": true,
+      "reparto": {
+        "agencia": 50,
+        "broker": 50
+      },
+      "texto": "Trabajo con co-broker: comisión dividida 50/50 con el bróker que derive la operación."
+    }
   },
   {
     "id": "INM-011",
@@ -805,12 +852,12 @@
     "descriptionStatus": "Actualizado desde FICHA K20.docx; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-013/photo-01.jpg",
+    "cover": "assets/listings/INM-013/photo-11.jpg",
     "horizontalPhotos": [
+      "assets/listings/INM-013/photo-11.jpg",
       "assets/listings/INM-013/photo-06.jpg",
       "assets/listings/INM-013/photo-07.jpg",
-      "assets/listings/INM-013/photo-08.jpg",
-      "assets/listings/INM-013/photo-11.jpg"
+      "assets/listings/INM-013/photo-08.jpg"
     ],
     "verticalPhotos": [
       "assets/listings/INM-013/photo-01.jpg",
@@ -847,7 +894,16 @@
         "path": "assets/listings/INM-013/plano-04.jpg",
         "title": "Alzado de la fachada del edificio"
       }
-    ]
+    ],
+    "negocio": {
+      "modalidad": "co_broker",
+      "aceptaCoBroker": true,
+      "reparto": {
+        "agencia": 50,
+        "broker": 50
+      },
+      "texto": "Trabajo con co-broker: comisión dividida 50/50 con el bróker que derive la operación."
+    }
   },
   {
     "id": "INM-015",

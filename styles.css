@@ -300,6 +300,11 @@ h1, h2, h3, p { margin-top: 0; }
 .media-square .media-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .media-square .gallery-image { aspect-ratio: 1; object-fit: cover; }
 
+/* Modalidad de venta (trabajo con co-broker) */
+.detail-broker { margin: 0 0 30px; padding: 16px 20px; border-left: 3px solid var(--accent); background: var(--accent-pale); }
+.detail-broker .eyebrow { margin: 0 0 5px; }
+.detail-broker-text { margin: 0; color: var(--ink); font-size: 14px; line-height: 1.5; }
+
 /* Planos y documentación técnica */
 .media-plan { padding: 54px 0 0; }
 .plan-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
