@@ -396,8 +396,9 @@
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-006/photo-01.jpg",
+    "cover": "assets/listings/INM-006/photo-29.jpg",
     "horizontalPhotos": [
+      "assets/listings/INM-006/photo-29.jpg",
       "assets/listings/INM-006/photo-01.jpg",
       "assets/listings/INM-006/photo-02.jpg",
       "assets/listings/INM-006/photo-03.jpg",
@@ -430,9 +431,11 @@
       "assets/listings/INM-006/photo-28.jpg"
     ],
     "squarePhotos": [],
-    "videos": [],
-    "videosPendingReview": true,
-    "videosWithheldReason": "El video fuente contiene números de contacto y texto promocional incrustados.",
+    "videos": [
+      "assets/listings/INM-006/video-01.mp4"
+    ],
+    "videosPendingReview": false,
+    "videosWithheldReason": null,
     "plans": []
   },
   {
