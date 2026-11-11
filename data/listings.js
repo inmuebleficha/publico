@@ -2,7 +2,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-001",
     "type": "Apartaestudio",
-    "title": "Apartaestudio en arriendo · 20 m²",
+    "title": "Apartaestudio en arriendo · 20 m² · Álamos",
     "zone": "Álamos, Fontibón, Bogotá",
     "operation": "Arriendo",
     "price": 1400000,
@@ -50,7 +50,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-002",
     "type": "Apartamento",
-    "title": "Loft amoblado · 20 m²",
+    "title": "Loft amoblado · 20 m² · La Castellana",
     "zone": "La Castellana, Barrios Unidos, Bogotá",
     "operation": "Venta",
     "price": 270000000,
@@ -102,7 +102,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-003",
     "type": "Apartamento",
-    "title": "Apartamento con balcón · 89 m²",
+    "title": "Apartamento con balcón · 89 m² · San Luis",
     "zone": "San Luis, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 749000000,
@@ -180,7 +180,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-004",
     "type": "Apartamento",
-    "title": "Apartamento exterior · 75 m²",
+    "title": "Apartamento exterior · 75 m² · San Luis",
     "zone": "San Luis, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 590000000,
@@ -243,7 +243,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-005",
     "type": "Apartamento",
-    "title": "Apartamento de 101 m² en el Salitre · conjunto Vissani",
+    "title": "Apartamento en conjunto Vissani · 101 m² · Salitre",
     "zone": "Salitre, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 1150000000,
@@ -374,7 +374,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-006",
     "type": "Apartamento",
-    "title": "Apartamento remodelado · 111,7 m²",
+    "title": "Apartamento remodelado · 111,7 m² · Acevedo Tejada",
     "zone": "Acevedo Tejada, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 550000000,
@@ -441,7 +441,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-007",
     "type": "Apartamento",
-    "title": "Apartamento en venta · 120 m²",
+    "title": "Apartamento · 120 m² · Cedritos",
     "zone": "Cedritos, Usaquén, Bogotá",
     "operation": "Venta",
     "price": 589000000,
@@ -524,7 +524,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-008",
     "type": "Apartamento",
-    "title": "Apartamento · 83 m²",
+    "title": "Apartamento · 83 m² · Normandía",
     "zone": "Normandía, Engativá, Bogotá",
     "operation": "Venta",
     "price": 590000000,
@@ -542,11 +542,11 @@ window.PROPERTY_LISTINGS = [
     "features": [
       "parking"
     ],
-    "description": "Apartamento de 83 m² en tercer piso, con tres habitaciones, tres baños y parqueadero de uso exclusivo.",
-    "descriptionStatus": "Borrador basado en ficha; validar",
+    "description": "Apartamento de 83 m² en Normandía (Engativá), en tercer piso, con tres habitaciones —dos con baño propio—, tres baños y parqueadero de uso exclusivo. Cuenta con sala-comedor amplia con salida a balcón, cocina integral tipo lineal con estufa a gas, estudio o biblioteca, zona de lavado, calentador a gas y tres closets. Los pisos son laminados y tiene vista despejada hacia los cerros. El inmueble está en conjunto cerrado, en edificio de estrato 4 sin ascensor; cercano a hospitales, colegios, universidades, restaurantes, parques, transporte público y vías principales. Precio de venta: $590 millones. Administración mensual: $500.000.",
+    "descriptionStatus": "Actualizado desde descripcion.txt (Normandía, 11/11); validar",
     "missingDescription": false,
     "published": false,
-    "cover": "assets/listings/INM-008/photo-01.jpg",
+    "cover": "assets/listings/INM-008/photo-06.jpg",
     "horizontalPhotos": [
       "assets/listings/INM-008/photo-01.jpg",
       "assets/listings/INM-008/photo-02.jpg",
@@ -564,11 +564,16 @@ window.PROPERTY_LISTINGS = [
       "assets/listings/INM-008/photo-34.jpg",
       "assets/listings/INM-008/photo-36.jpg",
       "assets/listings/INM-008/photo-39.jpg",
-      "assets/listings/INM-008/photo-41.jpg"
+      "assets/listings/INM-008/photo-41.jpg",
+      "assets/listings/INM-008/photo-43.jpg",
+      "assets/listings/INM-008/photo-44.jpg",
+      "assets/listings/INM-008/photo-45.jpg",
+      "assets/listings/INM-008/photo-46.jpg",
+      "assets/listings/INM-008/photo-47.jpg"
     ],
     "verticalPhotos": [
-      "assets/listings/INM-008/photo-05.jpg",
       "assets/listings/INM-008/photo-06.jpg",
+      "assets/listings/INM-008/photo-05.jpg",
       "assets/listings/INM-008/photo-07.jpg",
       "assets/listings/INM-008/photo-09.jpg",
       "assets/listings/INM-008/photo-11.jpg",
@@ -655,7 +660,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-010",
     "type": "Casa",
-    "title": "Casa con terrazas · 289 m² construidos",
+    "title": "Casa con terrazas · 289 m² · Chía",
     "zone": "Casa de Piedra, Chía",
     "operation": "Venta",
     "price": 1100000000,
@@ -709,7 +714,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-011",
     "type": "Casa",
-    "title": "Casa campestre · 640 m² construidos",
+    "title": "Casa campestre · 640 m² · Nilo",
     "zone": "Nilo, Cundinamarca",
     "operation": "Venta",
     "price": 1590000000,
@@ -765,7 +770,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-012",
     "type": "Casa",
-    "title": "Casa con patio, jardín y sótano · La Soledad",
+    "title": "Casa con patio, jardín y sótano · 296,94 m² · La Soledad",
     "zone": "La Soledad, Teusaquillo, Bogotá",
     "operation": "Venta y arriendo",
     "price": 1600000000,
@@ -835,7 +840,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-013",
     "type": "Edificio de oficinas",
-    "title": "Edificio de oficinas · 20 unidades · La Soledad",
+    "title": "Edificio de oficinas · 449,99 m² · La Soledad",
     "zone": "La Soledad, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 5000000000,
@@ -1003,7 +1008,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-016",
     "type": "Apartamento",
-    "title": "Apartamento en venta · 134 m²",
+    "title": "Apartamento · 134 m² · La Soledad",
     "zone": "La Soledad, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 795000000,
