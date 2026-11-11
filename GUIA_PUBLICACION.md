@@ -35,3 +35,30 @@ Procedimiento obligatorio al modificar datos o fotos:
 Las fotos nuevas deben publicarse en `assets/listings/INM-XXX/photo-NN.jpg` sin metadatos EXIF ni GPS,
 con el lado mayor a 1600 px. Las fichas estáticas también necesitan regenerarse cuando cambia la portada
 (`cover`), porque la vista previa de WhatsApp toma la imagen de `og:image`.
+
+## Convención de carpetas, portadas y avisos
+
+- Cada carpeta de inmueble lleva su código delante: `INM-008 aptoNormandia`. Los scripts localizan la
+  carpeta por ese prefijo, así que se pueden renombrar sin romper nada.
+- El archivo `fotoIndex` de la carpeta (o `fotoIndex.jpeg` / `fotoIndex.jpg`) marca **la imagen de
+  portada**: es la que se ve al compartir el enlace. Se publica esa foto como `cover` y se deja de
+  primera en la galería. Si la foto marcada cambia de contenido, hay que republicarla.
+- Si una foto tiene matrícula de vehículo legible, no se publica hasta que se difumine. Antes de
+  publicar, revisa las fotos nuevas una a una.
+- `dataNegocio.txt` de cada carpeta indica la situación comercial. Las fichas compartidas con bróker
+  50/50 muestran el aviso "Trabajo con co-broker 50/50, posible tercería 1-1-1."; las de captación
+  directa no muestran aviso. El detalle completo se guarda en `inventario/negocio.json`, fuera de la
+  carpeta publicada.
+
+## Publicar con git (recomendado)
+
+Con git instalado y una clave SSH registrada en la cuenta:
+
+```
+powershell -ExecutionPolicy Bypass -File C:\Users\lprie\Tools\publicar-sitio.ps1
+```
+
+El script sincroniza datos, fichas, código y medios (y borra del sitio los medios que ya no estén en
+la carpeta de publicación), bumpea la etiqueta de caché, regenera las 15 fichas, hace commit y push.
+El despliegue de Pages tarda entre 1 y 5 minutos; si el workflow se queda mucho rato en "Queued",
+espera y revisa de nuevo antes de tocar nada más.
