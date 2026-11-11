@@ -300,6 +300,13 @@ h1, h2, h3, p { margin-top: 0; }
 .media-square .media-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 .media-square .gallery-image { aspect-ratio: 1; object-fit: cover; }
 
+/* Planos y documentación técnica */
+.media-plan { padding: 54px 0 0; }
+.plan-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.plan-item { margin: 0; background: var(--white); border: 1px solid var(--line); display: flex; flex-direction: column; }
+.plan-image { width: 100%; height: auto; max-height: 620px; object-fit: contain; background: #fff; }
+.plan-caption { font-family: var(--serif); font-size: 15px; line-height: 1.4; color: var(--ink); padding: 10px 12px; border-top: 1px solid var(--line); }
+
 /* Carrusel de fotografías (un carrusel por orientación) */
 .carousel { position: relative; }
 .carousel-viewport { overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; scrollbar-width: none; -ms-overflow-style: none; }
@@ -337,6 +344,8 @@ h1, h2, h3, p { margin-top: 0; }
   .media-vertical .media-grid, .media-square .media-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
 @media (max-width: 640px) {
+  .plan-grid { grid-template-columns: 1fr; gap: 14px; }
+  .plan-image { max-height: 60vh; }
   .site-header { height: 70px; padding: 0 20px; }
   .wordmark-mark { transform: scale(.9); transform-origin: left center; }
   .wordmark strong { font-size: 11px; }

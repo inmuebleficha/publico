@@ -44,7 +44,8 @@
       "assets/listings/INM-001/video-01.mp4"
     ],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-002",
@@ -86,7 +87,8 @@
     ],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-003",
@@ -154,7 +156,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-004",
@@ -207,7 +210,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-005",
@@ -337,7 +341,8 @@
       "assets/listings/INM-005/video-07.mp4"
     ],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-006",
@@ -400,7 +405,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": true,
-    "videosWithheldReason": "El video fuente contiene números de contacto y texto promocional incrustados."
+    "videosWithheldReason": "El video fuente contiene números de contacto y texto promocional incrustados.",
+    "plans": []
   },
   {
     "id": "INM-007",
@@ -472,7 +478,8 @@
       "assets/listings/INM-007/video-01.mp4"
     ],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-008",
@@ -549,7 +556,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-009",
@@ -601,7 +609,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-010",
@@ -644,7 +653,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-011",
@@ -699,7 +709,8 @@
       "assets/listings/INM-011/video-01.mp4"
     ],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-012",
@@ -768,7 +779,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-013",
@@ -817,7 +829,25 @@
       "assets/listings/INM-013/video-04.mp4"
     ],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": [
+      {
+        "path": "assets/listings/INM-013/plano-01.jpg",
+        "title": "Planta de piso tipo con el metraje de los seis apartamentos"
+      },
+      {
+        "path": "assets/listings/INM-013/plano-02.jpg",
+        "title": "Corte longitudinal del edificio"
+      },
+      {
+        "path": "assets/listings/INM-013/plano-03.jpg",
+        "title": "Ubicación del inmueble en la manzana"
+      },
+      {
+        "path": "assets/listings/INM-013/plano-04.jpg",
+        "title": "Alzado de la fachada del edificio"
+      }
+    ]
   },
   {
     "id": "INM-015",
@@ -908,7 +938,8 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   },
   {
     "id": "INM-016",
@@ -973,6 +1004,7 @@
     "squarePhotos": [],
     "videos": [],
     "videosPendingReview": false,
-    "videosWithheldReason": null
+    "videosWithheldReason": null,
+    "plans": []
   }
 ]

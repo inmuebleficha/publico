@@ -239,6 +239,26 @@ function mediaSection(title, paths, orientation) {
   return section;
 }
 
+function planSection(plans) {
+  if (!Array.isArray(plans) || plans.length === 0) return null;
+  const section = make("section", "media-section media-plan");
+  section.append(make("div", "media-heading", "Planos y documentación técnica"));
+  const grid = make("div", "plan-grid");
+  plans.forEach((plan, index) => {
+    const path = typeof plan === "string" ? plan : plan.path;
+    const label = typeof plan === "string" ? `Plano ${index + 1}` : (plan.title || `Plano ${index + 1}`);
+    if (!safeAssetPath(path)) return;
+    const figure = make("figure", "plan-item");
+    const image = mediaImage(path, label, "gallery-image plan-image");
+    if (!image) return;
+    figure.append(image, make("figcaption", "plan-caption", label));
+    grid.append(figure);
+  });
+  if (!grid.childElementCount) return null;
+  section.append(grid);
+  return section;
+}
+
 function renderDetail(listings) {
   const root = byId("detail-content");
   if (!root) return;
@@ -328,6 +348,9 @@ function renderDetail(listings) {
     if (section) galleries.append(section);
   });
   if (galleries.childElementCount) root.append(galleries);
+
+  const plans = planSection(listing.plans);
+  if (plans) root.append(plans);
 
   if (Array.isArray(listing.videos) && listing.videos.length) {
     const videoSection = make("section", "video-section");
