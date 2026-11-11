@@ -1,5 +1,11 @@
 # Publicación en GitHub Pages
 
+## Estado actual
+
+El catálogo publica **16 inmuebles** (INM-001 a INM-016, sin huecos). Cada uno tiene su carpeta en el
+disco local con el código delante (`INM-008 aptoNormandia`) y su ficha estática
+`ficha-INM-XXX.html` con Open Graph propia.
+
 ## Antes de publicar
 
 Este catálogo es un borrador: los inmuebles, descripciones, imágenes y videos deben revisarse y contar con autorización antes de hacerse públicos. GitHub Pages es público; todo archivo dentro de la carpeta de publicación puede descargarse aunque no aparezca enlazado desde la página.
