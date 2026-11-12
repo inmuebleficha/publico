@@ -243,7 +243,7 @@ window.PROPERTY_LISTINGS = [
   {
     "id": "INM-005",
     "type": "Apartamento",
-    "title": "Apartamento en conjunto Vissani · 101 m² · Salitre Sauzalito",
+    "title": "Apartamento · 101 m² · Salitre Sauzalito",
     "zone": "Salitre Sauzalito, Teusaquillo, Bogotá",
     "operation": "Venta",
     "price": 1150000000,
@@ -262,7 +262,7 @@ window.PROPERTY_LISTINGS = [
       "parking",
       "balcony"
     ],
-    "description": "Apartamento de 101 m² en el conjunto Vissani, en Salitre Sauzalito (26 con Boyacá), en tercer piso, esquinero, con vista exterior y mucha luz natural. Tiene tres habitaciones: la principal con walk-in closet y baño privado, y dos secundarias con clóset; 2,5 baños (dos completos y uno social), cocina americana abierta, sala amplia, amplio estudio que puede usarse como home office y zona de lavado. Cuenta con dos parqueaderos en línea escriturados, depósito en el mismo piso y bodega en el sótano. El conjunto tiene gimnasio, espacio de coworking, terraza y es de construcción reciente (0-5 años). Área privada de 89 m² más balcón, altura de 2,5 m, estrato 5. Precio de venta: $1.150 millones. Administración mensual: $550.000.",
+    "description": "Apartamento de 101 m² en Salitre Sauzalito - 26 con Boyacá, en tercer piso con vista exterior y mucha luz natural, esquinero. Tiene tres habitaciones: la principal con walk-in closet y baño privado, y dos secundarias con clóset; 2,5 baños (dos completos y uno social), cocina americana abierta, sala amplia, amplio estudio que puede usarse como home office y zona de lavado. Cuenta con dos parqueaderos en línea, depósito en el mismo piso y bodega en el sótano. El conjunto tiene gimnasio, espacio de coworking, terraza y es de construcción reciente. Precio de venta: $1.150 millones. Administración mensual: $550.000. Área privada de 89 m² más balcón, altura de 2,5 m, estrato 5 y construcción de 0 a 5 años.",
     "descriptionStatus": "Actualizado desde descripcion.txt (Salitre Sauzalito, 12/11); validar",
     "missingDescription": false,
     "published": false,
