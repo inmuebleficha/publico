@@ -654,7 +654,12 @@
       "assets/listings/INM-009/photo-17.jpg"
     ],
     "squarePhotos": [],
-    "videos": [],
+    "videos": [
+      {
+        "path": "assets/listings/INM-009/video-01.mp4",
+        "poster": "assets/listings/INM-009/video-cover.jpg"
+      }
+    ],
     "videosPendingReview": false,
     "videosWithheldReason": null,
     "plans": []

@@ -364,12 +364,17 @@ function renderDetail(listings) {
     videoSection.append(make("p", "eyebrow", "VIDEO"));
     videoSection.append(make("h2", "", "Recorrido audiovisual"));
     const grid = make("div", "video-grid");
-    listing.videos.forEach((path) => {
+    listing.videos.forEach((entry) => {
+      // admite "assets/...mp4" o { path, poster }
+      const path = typeof entry === "string" ? entry : entry && entry.path;
+      const poster = typeof entry === "string" ? null : entry && entry.poster;
       const safePath = safeAssetPath(path);
       if (!safePath) return;
       const video = make("video", "property-video");
       video.controls = true;
       video.preload = "metadata";
+      const safePoster = safeAssetPath(poster);
+      if (safePoster) video.setAttribute("poster", safePoster);
       video.src = safePath;
       grid.append(video);
     });
