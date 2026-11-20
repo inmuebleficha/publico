@@ -2,6 +2,7 @@ const PLACEHOLDER_BY_TYPE = {
   Apartamento: "assets/placeholders/apartamento.svg",
   Apartaestudio: "assets/placeholders/apartaestudio.svg",
   Casa: "assets/placeholders/casa.svg",
+  Finca: "assets/placeholders/casa.svg",
   Terreno: "assets/placeholders/terreno.svg",
   "Edificio de oficinas": "assets/placeholders/apartamento.svg",
 };

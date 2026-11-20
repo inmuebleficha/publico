@@ -2,7 +2,7 @@
 
 ## Estado actual
 
-El catálogo publica **17 inmuebles** (INM-001 a INM-017, sin huecos). Cada uno tiene su carpeta en el
+El catálogo publica **18 inmuebles** (INM-001 a INM-018, sin huecos). Cada uno tiene su carpeta en el
 disco local con el código delante (`INM-008 aptoNormandia`) y su ficha estática
 `ficha-INM-XXX.html` con Open Graph propia.
 
