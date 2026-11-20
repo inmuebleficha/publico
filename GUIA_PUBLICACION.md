@@ -2,7 +2,7 @@
 
 ## Estado actual
 
-El catálogo publica **16 inmuebles** (INM-001 a INM-016, sin huecos). Cada uno tiene su carpeta en el
+El catálogo publica **17 inmuebles** (INM-001 a INM-017, sin huecos). Cada uno tiene su carpeta en el
 disco local con el código delante (`INM-008 aptoNormandia`) y su ficha estática
 `ficha-INM-XXX.html` con Open Graph propia.
 
@@ -35,7 +35,7 @@ Procedimiento obligatorio al modificar datos o fotos:
 1. Actualiza `data/listings.json` y `data/listings.js`.
 2. Cambia la etiqueta en `ficha.html` e `index.html` a una versión nueva, por ejemplo `?v=20261110-inm015`.
 3. Regenera las fichas estáticas con el generador (`gen_fichas.py`), que copian esa misma versión a cada `ficha-INM-XXX.html`.
-4. Sube `index.html`, `ficha.html`, las 15 fichas y los archivos de datos, y espera el despliegue.
+4. Sube `index.html`, `ficha.html`, las fichas `ficha-INM-*.html` y los archivos de datos, y espera el despliegue.
 5. Verifica en producción que el contador de fotos y los precios coincidan con los datos nuevos.
 
 Las fotos nuevas deben publicarse en `assets/listings/INM-XXX/photo-NN.jpg` sin metadatos EXIF ni GPS,
@@ -65,6 +65,6 @@ powershell -ExecutionPolicy Bypass -File C:\Users\lprie\Tools\publicar-sitio.ps1
 ```
 
 El script sincroniza datos, fichas, código y medios (y borra del sitio los medios que ya no estén en
-la carpeta de publicación), bumpea la etiqueta de caché, regenera las 15 fichas, hace commit y push.
+la carpeta de publicación), bumpea la etiqueta de caché, regenera las fichas estáticas, hace commit y push.
 El despliegue de Pages tarda entre 1 y 5 minutos; si el workflow se queda mucho rato en "Queued",
 espera y revisa de nuevo antes de tocar nada más.
