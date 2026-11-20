@@ -1258,8 +1258,6 @@
       "assets/listings/INM-018/photo-25.jpg",
       "assets/listings/INM-018/photo-26.jpg",
       "assets/listings/INM-018/photo-27.jpg",
-      "assets/listings/INM-018/photo-28.jpg",
-      "assets/listings/INM-018/photo-29.jpg",
       "assets/listings/INM-018/photo-30.jpg",
       "assets/listings/INM-018/photo-31.jpg",
       "assets/listings/INM-018/photo-32.jpg",
@@ -1287,11 +1285,14 @@
       "assets/listings/INM-018/photo-54.jpg",
       "assets/listings/INM-018/photo-55.jpg"
     ],
-    "verticalPhotos": [],
+    "verticalPhotos": [
+      "assets/listings/INM-018/photo-28.jpg",
+      "assets/listings/INM-018/photo-29.jpg"
+    ],
     "squarePhotos": [],
     "videos": [],
-    "videosPendingReview": true,
-    "videosWithheldReason": "La carpeta incluye 3 videos en bruto (WhatsApp) que requieren revisión y recodificación sin audio antes de publicarse.",
+    "videosPendingReview": false,
+    "videosWithheldReason": null,
     "plans": []
   }
 ]
