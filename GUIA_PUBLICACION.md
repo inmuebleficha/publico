@@ -51,6 +51,13 @@ con el lado mayor a 1600 px. Las fichas estáticas también necesitan regenerars
   primera en la galería. Si la foto marcada cambia de contenido, hay que republicarla.
 - Si una foto tiene matrícula de vehículo legible, no se publica hasta que se difumine. Antes de
   publicar, revisa las fotos nuevas una a una.
+- **Regla de videos (2026-11-21): solo clips superiores a 20 segundos.** Cualquier video de
+  20 segundos o menos se descarta y no se publica (ejemplo: INM-019 tenía un clip de 0.5 s que se
+  retiró; también se retiraron los de INM-005 de 10 s, 5.7 s y 14 s y el de INM-011 de 12.5 s).
+  Quedan como excepción ya publicados, por decisión del usuario, los dos clips de 19.9 s de
+  INM-005 (`video-03`) e INM-013 (`video-01`); no agregar más de esa duración.
+  Además, todos los videos se publican **sin audio** (re-codificados a H.264 con
+  `-an`, más su póster `video-NN.jpg`) y se listan en `videos` como `{path, poster}`.
 - `dataNegocio.txt` de cada carpeta indica la situación comercial. Las fichas compartidas con bróker
   50/50 muestran el aviso "Trabajo con co-broker 50/50, posible tercería 1-1-1."; las de captación
   directa no muestran aviso. El detalle completo se guarda en `inventario/negocio.json`, fuera de la

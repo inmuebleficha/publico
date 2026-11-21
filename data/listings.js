@@ -362,11 +362,7 @@ window.PROPERTY_LISTINGS = [
     "videos": [
       "assets/listings/INM-005/video-01.mp4",
       "assets/listings/INM-005/video-02.mp4",
-      "assets/listings/INM-005/video-03.mp4",
-      "assets/listings/INM-005/video-04.mp4",
-      "assets/listings/INM-005/video-05.mp4",
-      "assets/listings/INM-005/video-06.mp4",
-      "assets/listings/INM-005/video-07.mp4"
+      "assets/listings/INM-005/video-03.mp4"
     ],
     "videosPendingReview": false,
     "videosWithheldReason": null,
@@ -767,9 +763,7 @@ window.PROPERTY_LISTINGS = [
       "assets/listings/INM-011/photo-16.jpg"
     ],
     "squarePhotos": [],
-    "videos": [
-      "assets/listings/INM-011/video-01.mp4"
-    ],
+    "videos": [],
     "videosPendingReview": false,
     "videosWithheldReason": null,
     "plans": []
@@ -1371,10 +1365,6 @@ window.PROPERTY_LISTINGS = [
       {
         "path": "assets/listings/INM-019/video-01.mp4",
         "poster": "assets/listings/INM-019/video-01.jpg"
-      },
-      {
-        "path": "assets/listings/INM-019/video-02.mp4",
-        "poster": "assets/listings/INM-019/video-02.jpg"
       }
     ],
     "plans": []
