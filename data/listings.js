@@ -1259,7 +1259,7 @@ window.PROPERTY_LISTINGS = [
       "assets/listings/INM-018/photo-26.jpg",
       "assets/listings/INM-018/photo-27.jpg",
       "assets/listings/INM-018/photo-28.jpg",
-      "assets/listings/INM-018/photo-31.jpg",
+      "assets/listings/INM-018/photo-29.jpg",
       "assets/listings/INM-018/photo-32.jpg",
       "assets/listings/INM-018/photo-33.jpg",
       "assets/listings/INM-018/photo-34.jpg",
@@ -1284,11 +1284,12 @@ window.PROPERTY_LISTINGS = [
       "assets/listings/INM-018/photo-53.jpg",
       "assets/listings/INM-018/photo-54.jpg",
       "assets/listings/INM-018/photo-55.jpg",
-      "assets/listings/INM-018/photo-56.jpg"
+      "assets/listings/INM-018/photo-56.jpg",
+      "assets/listings/INM-018/photo-57.jpg"
     ],
     "verticalPhotos": [
-      "assets/listings/INM-018/photo-29.jpg",
-      "assets/listings/INM-018/photo-30.jpg"
+      "assets/listings/INM-018/photo-30.jpg",
+      "assets/listings/INM-018/photo-31.jpg"
     ],
     "squarePhotos": [],
     "videos": [],
