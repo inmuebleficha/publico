@@ -1302,16 +1302,16 @@
     "type": "Apartamento",
     "title": "Apartamento · 52 m² · Hacienda Los Sauces",
     "zone": "Hacienda Los Sauces Amarillo, Madrid, Cundinamarca",
-    "operation": "Venta",
+    "operation": "Arriendo",
     "price": null,
-    "rentPrice": null,
-    "priceIncludesAdmin": false,
+    "rentPrice": 1500000,
+    "priceIncludesAdmin": true,
     "administration": null,
     "area": 52,
     "areaLabel": "Área construida",
     "privateArea": 52,
     "lotArea": 52,
-    "floor": null,
+    "floor": 10,
     "bedrooms": 2,
     "bathrooms": 1,
     "parking": 1,
@@ -1320,8 +1320,8 @@
       "elevator",
       "security"
     ],
-    "description": "Apartamento para estrenar de 52 m², ubicado en el Conjunto Residencial Hacienda Los Sauces - Magnolio, barrio Hacienda Los Sauces Amarillo, Madrid, Cundinamarca. Cuenta con sala-comedor, cocina integral, dos habitaciones (una con walking clóset), un baño con división y calentador a gas; con ascensor y escaleras. Incluye parqueadero cubierto. El conjunto ofrece salón comunal, oficinas de administración, dos porterías, parqueadero para visitantes y bicicleteros; próximamente zona BBQ, gimnasio, canchas de tenis, fútbol y baloncesto y pista de atletismo. Su ubicación ofrece cercanía al Centro Comercial Casablanca, San Sebastián, Parque de las Flores, Hospital Santa Matilde, IPS Cafam, colegios, supermercados, droguerías y restaurantes, con fácil acceso a la variante Mosquera-Madrid-Facatativá y conexión con el casco urbano. Ideal para disfrutar de comodidad y tranquilidad. Estrato 3.",
-    "descriptionStatus": "Borrador basado en ficha; validar",
+    "description": "Apartamento para estrenar de 52 m², ubicado en el Conjunto Residencial Hacienda Los Sauces – Magnolio, barrio Hacienda Los Sauces Amarillo, Madrid, Cundinamarca. Cuenta con sala-comedor, cocina integral, dos habitaciones (una con walking clóset), un baño con división y calentador a gas, con ascensor y escaleras. Incluye parqueadero cubierto. El conjunto ofrece salón comunal, oficinas de administración, dos porterías, parqueadero para visitantes y bicicleteros; próximamente zona BBQ, gimnasio, canchas de tenis, fútbol y baloncesto, además de pista de atletismo. Su ubicación ofrece cercanía al Centro Comercial Casablanca, San Sebastián, Parque de las Flores, Hospital Santa Matilde, IPS Cafam, colegios, supermercados, droguerías y restaurantes, con fácil acceso a la variante Mosquera–Madrid–Facatativá y conexión con el casco urbano. Ideal para disfrutar de comodidad y tranquilidad. Estrato 3, piso 10, año 2026. Arriendo $1.500.000/mes con administración incluida.",
+    "descriptionStatus": "Tomada de Descripcion.txt actualizada (2026-11-21)",
     "missingDescription": false,
     "published": false,
     "cover": "assets/listings/INM-019/photo-01.jpg",
@@ -1335,7 +1335,7 @@
       "assets/listings/INM-019/photo-07.jpg",
       "assets/listings/INM-019/photo-08.jpg",
       "assets/listings/INM-019/photo-09.jpg",
-      "assets/listings/INM-019/photo-11.jpg",
+      "assets/listings/INM-019/photo-10.jpg",
       "assets/listings/INM-019/photo-12.jpg",
       "assets/listings/INM-019/photo-13.jpg",
       "assets/listings/INM-019/photo-14.jpg",
@@ -1364,12 +1364,19 @@
       "assets/listings/INM-019/photo-37.jpg"
     ],
     "verticalPhotos": [
-      "assets/listings/INM-019/photo-10.jpg"
+      "assets/listings/INM-019/photo-11.jpg"
     ],
     "squarePhotos": [],
-    "videos": [],
-    "videosPendingReview": true,
-    "videosWithheldReason": "La carpeta incluye 2 videos en bruto (WhatsApp) que requieren revisión y recodificación sin audio antes de publicarse.",
+    "videos": [
+      {
+        "path": "assets/listings/INM-019/video-01.mp4",
+        "poster": "assets/listings/INM-019/video-01.jpg"
+      },
+      {
+        "path": "assets/listings/INM-019/video-02.mp4",
+        "poster": "assets/listings/INM-019/video-02.jpg"
+      }
+    ],
     "plans": []
   }
 ]
