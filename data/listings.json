@@ -1225,7 +1225,7 @@
     "bathrooms": 15,
     "parking": null,
     "features": [],
-    "description": "Finca de 14.211 m² (2,19 fanegadas, 1,4 hectáreas) en venta, ubicada sobre la vía San Francisco - Vergara, sector La Llanta, con posibilidad de negociar un terreno vecino también en venta. Cuenta con construcción en obra gris de dos pisos más plancha del tercer piso: 13 habitaciones tipo suite con baño, ducha y espacio para clóset, cocina tipo americano, comedor, sala de entrenamiento, espacio para oratorio en el segundo piso y quiosco para BBQ. Incluye un espacio independiente para servicio o escoltas con dos habitaciones y dos baños. Servicios de energía, acueducto veredal y nacimiento de agua dentro de la finca. Precio por metro cuadrado: $98.515.",
+    "description": "Finca de 14.211 m² (2,19 fanegadas, 1,4 hectáreas) en venta, ubicada sobre la vía San Francisco - Vergara. Cuenta con construcción en obra gris de dos pisos más plancha del tercer piso, con aproximadamente 300 m² construidos por piso. Plan del proyecto: 13 habitaciones tipo suite con baño, ducha y espacio para clóset; espacio independiente para servicio o escoltas con dos habitaciones y dos baños; cocina tipo americano, comedor, sala de entrenamiento y espacio para reuniones en el segundo piso; quiosco para BBQ. Parte plana amplia para parqueadero de buses y un gran número de vehículos. Servicios de energía y acueducto veredal, más nacimiento de agua dentro de la finca. Posibilidad de negociar un terreno vecino para un área mayor.",
     "descriptionStatus": "Borrador basado en ficha; validar",
     "missingDescription": false,
     "published": false,
@@ -1258,7 +1258,7 @@
       "assets/listings/INM-018/photo-25.jpg",
       "assets/listings/INM-018/photo-26.jpg",
       "assets/listings/INM-018/photo-27.jpg",
-      "assets/listings/INM-018/photo-30.jpg",
+      "assets/listings/INM-018/photo-28.jpg",
       "assets/listings/INM-018/photo-31.jpg",
       "assets/listings/INM-018/photo-32.jpg",
       "assets/listings/INM-018/photo-33.jpg",
@@ -1283,11 +1283,12 @@
       "assets/listings/INM-018/photo-52.jpg",
       "assets/listings/INM-018/photo-53.jpg",
       "assets/listings/INM-018/photo-54.jpg",
-      "assets/listings/INM-018/photo-55.jpg"
+      "assets/listings/INM-018/photo-55.jpg",
+      "assets/listings/INM-018/photo-56.jpg"
     ],
     "verticalPhotos": [
-      "assets/listings/INM-018/photo-28.jpg",
-      "assets/listings/INM-018/photo-29.jpg"
+      "assets/listings/INM-018/photo-29.jpg",
+      "assets/listings/INM-018/photo-30.jpg"
     ],
     "squarePhotos": [],
     "videos": [],
